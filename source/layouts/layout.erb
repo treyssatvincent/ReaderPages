@@ -1,0 +1,24 @@
+<%
+if (current_page.data.title)
+    title = current_page.data.title + " | " + data.config['blog']['title']
+else
+    title = data.config['blog']['title'] + " | " + data.config['blog']['subtitle']
+end %>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title><%= title %></title>
+        <%= stylesheet_link_tag "site", :relative => true %>
+    </head>
+
+    <body>
+
+    <%= yield %>
+
+    </body>
+
+</html>

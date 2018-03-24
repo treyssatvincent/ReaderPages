@@ -1,0 +1,16 @@
+<% wrap_layout :layout do %>
+
+    <header>
+
+        <nav>
+            <a href="<%= data.config['blog']['url'] %>" class="site-title"><p><%= data.config['blog']['title'] %></p></a>
+            <% data.config['header'].each do |link| %>
+                <a href="<%= data.config['blog']['url'] %>/<%= link[1] %>"><p><%= link[0] %></p></a>
+            <% end %>
+        </nav>
+
+    </header>
+
+    <%= yield %>
+
+<% end %>

@@ -1,0 +1,23 @@
+---
+layout: "index"
+---
+
+<main>
+    <% blog.articles[0...blog.articles.count].each_with_index do |article, id| %>
+        <section>
+
+                <h2><%= link_to article.title, article.path %></h2>
+
+                <time datetime="<%= article.date.strftime('%F') %>">
+                    <%= article.date.strftime('%b %e %Y') %>
+                </time>
+
+
+
+            <div class="section_content">
+                <p><%= strip_tags(article.summary) %></p>
+            </div>
+        </section>
+    <% end %>
+
+</main>

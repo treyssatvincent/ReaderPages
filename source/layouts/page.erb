@@ -1,0 +1,10 @@
+<% page_content = File.read("data/" + current_page.data.slug + ".md") %>
+
+<% wrap_layout :body do %>
+<main>
+    <article>
+        <h1><%= current_page.data.title %></h1>
+        <%= Kramdown::Document.new(page_content).to_html %>
+    </article>
+</main>
+<% end %>
