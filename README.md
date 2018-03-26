@@ -1,16 +1,17 @@
 # ReaderPages
 📰 Blogging focused on lightness and readability.
 
-## Installation
-Firstly install ruby, on macOS and some GNU/Linux it's already done for you.
+[Live demo](https://treyssatvincent.github.io/ReaderPages/)
 
-You need to install [Middleman](https://middlemanapp.com/) before with `gem install middleman`.
+## Installation
+If you don't have ruby already installed search how to (on macOS and some GNU/Linux it's already installed for you).
 
 Clone this repository and run `bundle install` in the directory.
 
-You can now run `middleman server` and see the blog at `http://localhost:4567/`, and `middleman build` to generate the statics file you'll want to host.
+You can now run :
 
-There is another magical and very usefull command to generate and send to an host your blog, it's `middleman deploy`, check documenations and tutorials around the net.
+1) `middleman server` and see the blog at `http://localhost:4567/`.
+2) `middleman build` to generate the statics file you'll want to host.
 
 You should take a look into the file `data/config.yml` and edit it as your conveniance.
 

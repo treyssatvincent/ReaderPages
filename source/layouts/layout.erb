@@ -1,9 +1,17 @@
 <%
 if (current_page.data.title)
     title = current_page.data.title + " | " + data.config['blog']['title']
+    ogTitle  = title
 else
     title = data.config['blog']['title'] + " | " + data.config['blog']['subtitle']
-end %>
+    ogTitle  = data.config['blog']['title']
+end
+
+if (image_path(current_page.data.image) != "/images/")
+
+end
+
+%>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -11,13 +19,63 @@ end %>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport"
               content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="<%= ogTitle %>" />
+        <meta property="og:url" content="<%= data.config['blog']['url'] + current_page.url %>" />
+        <meta property="og:image" content="<%= data.config['blog']['url'] %><%= image_path "logo1200.png" %>" />
+
+        <% if (current_page.respond_to?(:date)) %>
+
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="<%= current_page.summary %>">
+            <meta property="og:article:published_time" content="<%= current_page.date %>" />
+
+            <% if !data.config['blog']['author'].blank? %>
+
+                <meta property="og:article:author" content="<%= data.config['blog']['author'] %>" />
+
+            <% end %>
+
+            <% if !current_page.tags.blank? %>
+                <% for tag in current_page.tags %>
+                    <meta property="og:article:tag" content="<%= tag %>" />
+                <% end %>
+            <% end %>
+
+        <% else %>
+            <meta property="og:type" content="website" />
+            <meta property="og:description" content="<%= data.config['blog']['subtitle'] %>" />
+        <% end %>
+
         <title><%= title %></title>
+
         <%= stylesheet_link_tag "site", :relative => true %>
+
     </head>
 
     <body>
 
+    <header>
+
+        <nav>
+            <a href="<%= data.config['blog']['url'] %>" class="site-title">
+                <% if !current_page.data.title.blank? %>
+                    <p><%= data.config['blog']['title'] %></p>
+                <% else %>
+                    <h1><%= data.config['blog']['title'] %></h1>
+                <% end %>
+            </a>
+
+            <% data.config['header'].each do |link| %>
+                <%= link_to link[0], link[1] %>
+            <% end %>
+        </nav>
+
+    </header>
+
     <%= yield %>
+
+
 
     </body>
 

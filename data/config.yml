@@ -1,7 +1,7 @@
 blog:
     title: ReaderPages
     subtitle: Another blog focused on lightness and readability
-    url: "https://treyssatvincent.github.io/ReaderPages/"
+    url: "https://treyssatvincent.github.io/ReaderPages"
     author: "Nino Treyssat-Vincent"
 
 rss:
@@ -10,5 +10,5 @@ rss:
 header:
     Exemple page: "page"
     Source Code: "https://github.com/treyssatvincent/ReaderPages"
-    Download: "https://github.com/treyssatvincent/ReaderPages"
     About ReaderPages: "about"
+    feed: "feed.xml"

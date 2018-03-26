@@ -5,9 +5,9 @@ ReaderPages is another blog theme focused on lightness and readability, it's mad
 
 **Faster and cheaper !**
 
-Static websites are very light on the server, they don't eat your RAM or your CPU. You can host a lot statics websites on cheap, or even free hosting.
+Static websites are very light on servers, they don't eat all your RAM or heat up your CPU. You can host a lot statics websites on cheap, or even free hostings plans.
 
-It also mean that all the pages are already available, to deliver a page you don't need to wait for the server's computation of this page.
+And because all the pages are already available, to deliver a page you don't need to wait for the server's computation of this page.
 
 
 ## But I don't know how to use it !
@@ -20,11 +20,15 @@ You need to install [Middleman](https://middlemanapp.com/) before with ```gem in
 
 Then get the source-code and run ```bundle install``` in the directory.
 
-You can now run ```middleman server``` and see the blog at ```http://localhost:4567/```, and ```middleman build``` to generate the statics file you'll want to host.
+After that, it's nearly ready, you should take a look into the file ```data/config.yml``` and edit it as your conveniance.
 
-There is another magical and very usefull command to generate and send to an host your blog, it's ```middleman deploy```, check documenations and tutorials around the net.
+And now you will need this 2 magicals commands :
 
-You should take a look into the file ```data/config.yml``` and edit it as your conveniance.
+1) `middleman server` and see the blog at `http://localhost:4567/`    
+2) `middleman build` to generate the statics file you'll want to host.
+
+There is another magical and very usefull command to generate and send to an host your blog, it's ```middleman deploy```, check documentation and tutorials around the net.
+
 
 
 
@@ -36,6 +40,8 @@ Run this command in the blog directory :
 ```
 middleman article "This is my great article"
 ```
+
+And write your article on the new file located in the folder ```source/blog/```. It's a [Markdown](https://wikipedia.org/wiki/Markdown) file.
 
 ### Create a page
 Create a file `exemple.html.erb` in `source/` and only add to it :

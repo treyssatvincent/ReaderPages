@@ -1,9 +1,9 @@
-<% wrap_layout :body do %>
+<% wrap_layout :layout do %>
 
     <article>
 
         <h1><%= current_page.data.title %></h1>
-        
+
         <time datetime="<%= current_page.date.strftime('%F') %>">
             <%= current_page.date.strftime('%b %e %Y') %>
         </time>
