@@ -8,7 +8,7 @@ rss:
     summary: "false"
 
 header:
-    Exemple page: "page"
-    Source Code: "https://github.com/treyssatvincent/ReaderPages"
-    About ReaderPages: "about"
+    Page: "page"
+    Source: "https://github.com/treyssatvincent/ReaderPages"
+    About: "about"
     feed: "feed.xml"

@@ -21,7 +21,7 @@ You should take a look into the file `data/config.yml` and edit it as your conve
 ### Create an article
 Run this command in the blog directory :
 ```
-# middleman article "This is my great article"
+middleman article "This is my great article"
 ```
 
 ### Create a page

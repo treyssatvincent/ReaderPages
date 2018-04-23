@@ -7,10 +7,6 @@ else
     ogTitle  = data.config['blog']['title']
 end
 
-if (image_path(current_page.data.image) != "/images/")
-
-end
-
 %>
 <!DOCTYPE html>
 <html lang="fr">
@@ -28,7 +24,7 @@ end
 
             <meta property="og:type" content="article" />
             <meta property="og:description" content="<%= current_page.summary %>">
-            <meta property="og:article:published_time" content="<%= current_page.date %>" />
+            <meta property="og:article:published_time" content="<%= current_page.date.strftime('%F') %>" />
 
             <% if !data.config['blog']['author'].blank? %>
 
@@ -57,15 +53,13 @@ end
 
     <header>
 
-        <nav>
-            <a href="<%= data.config['blog']['url'] %>" class="site-title">
-                <% if !current_page.data.title.blank? %>
-                    <p><%= data.config['blog']['title'] %></p>
-                <% else %>
-                    <h1><%= data.config['blog']['title'] %></h1>
-                <% end %>
-            </a>
+            <% if !current_page.data.title.blank? %>
+                <p class="site-title"><%= link_to data.config['blog']['title'], data.config['blog']['url'] %></p>
+            <% else %>
+                <h1 class="site-title"><%= link_to data.config['blog']['title'], data.config['blog']['url'] %></h1>
+            <% end %>
 
+        <nav>
             <% data.config['header'].each do |link| %>
                 <%= link_to link[0], link[1] %>
             <% end %>

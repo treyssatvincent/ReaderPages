@@ -1,13 +1,14 @@
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
+# Disabled to minimize css size and be w3c compliant.
+# activate :autoprefixer do |prefix|
+#   prefix.browsers = "last 2 versions"
+# end
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
 set :markdown_engine, :kramdown
-activate :syntax, :line_numbers => true
+activate :syntax, :line_numbers => false
 
 activate :blog do |blog|
     blog.permalink = "{title}.html"
