@@ -1,0 +1,18 @@
+<svg width="402" height="402" version="1.1" viewBox="0 0 402 402" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g transform="translate(-31.118 -267.03)">
+  <g transform="matrix(.5 0 0 .5 -79.202 181.51)">
+   <path d="m1022.1 185.54c0-6.627-5.373-12-12-12h-774.96c-6.627 0-12 5.373-12 12v775c0 6.627 5.373 12 12 12h775c6.627 0 12-5.373 12-12v-775z" fill="#fcfcfc" stroke="#565656" stroke-width="5"/>
+   <path d="m1022.1 185.54c0-6.627-5.373-12-12-12h-774.96c-6.627 0-12 5.373-12 12v775c0 6.627 5.373 12 12 12h775c6.627 0 12-5.373 12-12v-775z" fill="#333"/>
+   <path d="m235.14 173.67c-6.627 0-12 4.5017-12 10.054v72.63h799v-72.63c0-5.5524-5.373-10.054-12-10.054z" fill="#e8e8e8"/>
+   <rect x="243.01" y="197.32" width="708.54" height="35.386" rx="3" ry="3" fill="#fff"/>
+   <g fill="#949494">
+    <path d="m280.68 206.4c-4.7279 0-8.5625 3.8486-8.5625 8.5938s3.8343 8.625 8.5625 8.625c3.5302 0 6.5631-2.1516 7.875-5.2188l0.21875-0.53125c-0.98428-0.29608-1.7553-0.55578-2.6562-0.84375l-0.1875 0.40625c-0.9148 1.9855-2.9263 3.3438-5.25 3.3438-3.1883 0-5.75-2.575-5.75-5.7812s2.5612-5.7812 5.75-5.7812c2.4587 0 4.4818 1.5788 5.3125 3.75h-1.5938l3.2561 3.7057 3.4314-3.7057h-2.1562c-0.92162-3.7541-4.2305-6.5625-8.25-6.5625z" color="#000000" style="text-indent:0;text-transform:none"/>
+    <rect id="rect3935" x="973.95" y="205.97" width="22.932" height="4.8563" fill="#949494"/>
+    <use id="use3937" transform="translate(-1.4942e-6,6.6099)" width="1600" height="1000" fill="#949494" xlink:href="#rect3935"/>
+    <use transform="translate(-1.4942e-6,6.6099)" width="1600" height="1000" xlink:href="#use3937"/>
+   </g>
+   <rect x="223.14" y="255.81" width="799" height="2.4623" fill="#dedede"/>
+  </g>
+  <text x="57.898758" y="483.73917" fill="#eeeeee" font-family="sans-serif" letter-spacing="0px" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan fill="#eeeeee" font-size="53.333px">ReaderPages</tspan></text>
+ </g>
+</svg>
