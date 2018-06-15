@@ -46,6 +46,7 @@ end
         <title><%= title %></title>
 
         <%= stylesheet_link_tag "site", :relative => true %>
+        <%= javascript_include_tag "turbolinks", :relative => true %>
 
     </head>
 
@@ -54,9 +55,9 @@ end
     <header>
 
             <% if !current_page.data.title.blank? %>
-                <p class="site-title"><%= link_to data.config['blog']['title'], data.config['blog']['url'] %></p>
+                <p class="site-title"><%= link_to data.config['blog']['title'], '/' %></p>
             <% else %>
-                <h1 class="site-title"><%= link_to data.config['blog']['title'], data.config['blog']['url'] %></h1>
+                <h1 class="site-title"><%= link_to data.config['blog']['title'], '/' %></h1>
             <% end %>
 
         <nav>
@@ -68,8 +69,6 @@ end
     </header>
 
     <%= yield %>
-
-
 
     </body>
 
